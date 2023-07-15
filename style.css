@@ -1,0 +1,120 @@
+
+
+header
+{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(41, 46, 51);
+    width: 100%;
+    height: 40px;
+    top: 0;
+}
+
+header nav a
+{
+    text-decoration: none;
+    color: #fff;
+}
+
+header nav a:hover
+{
+    color: blueviolet;
+}
+
+
+
+img
+{
+    width: 100%;
+    max-width: 500px;
+}
+
+.content
+{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line
+{
+    border-right: 2px solid black;
+    width: 19ch;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(19),
+    blinking 0.5s infinite step-end alternate;
+}
+
+@keyframes typing
+{
+    from {
+        width: 0;
+    }
+    to {
+        width: 19ch;
+    }
+}
+
+@keyframes blinking
+{
+    50% {
+        border-color: transparent ;
+    }
+}
+
+#dowload
+{
+    display: inline-block;
+    margin: 0;
+    padding: 10px 20px;
+    text-align: center;
+    box-shadow: 2px 2px 0 black;
+    background-color: rgb(41, 46, 51);
+    text-decoration: none ;
+    color: #fff;
+}
+
+#dowload:hover
+{
+    background-color: blueviolet;
+}
+
+footer
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    text-align: center;
+    background-color: rgb(41, 46, 51);
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+}
+
+footer a
+{
+    color: #fff;
+}
+
+.github
+{
+    margin: 0 10px 0 10px;
+}
+
+.linkedin
+{
+    margin-right: 10%;
+}
+
+
+.linkedin:hover, .github:hover
+{
+    color: blueviolet;
+}
