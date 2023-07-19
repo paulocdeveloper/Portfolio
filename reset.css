@@ -13,7 +13,11 @@ body
     font-family: Fira Code,monospace;
 }
 
-h1, p
+h1, p, h3
 {
     margin: 0;
+}
+
+h3{
+    font-size: 30px;
 }
