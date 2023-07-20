@@ -35,8 +35,9 @@ ul{
     box-shadow: 0px 20px 0 rgb(190, 21, 21);
 }
 
+
 .container{
-    padding: 200px 0 0 0;
+    padding: 300px 0 0 0;
     
 }
 
@@ -106,25 +107,90 @@ h1{
 
 #about-background{
     height: 500px;
+    background-color: rgb(197, 195, 195);
+    align-items: center;
+    justify-content: center;
+    padding: 0 50px 0 80px;
 }
 
 .conhecimentos{
-    margin: 30px 0 30px 0;
+    padding: 100px 0 0 0;
+}
+
+.html-img{
+    width: 50px;
+}
+
+.css-img{
+    width: 50px;
+}
+
+.javascript-img{
+    width: 50px;
+}
+
+.git-img{
+    width: 40px;
+    position: relative;
+    top: 5px;
+    left: 60px;
+}
+
+.github-img{
+    position: relative;
+    top: 19px;
+    right: 50px;
+    width: 70px;
+    position: relative;
+    top
 }
 
 .content-about{
     display: flex;
-    margin: 0 50px 0 50px;
+    padding: 60px 0 0 0;
+
 }
 
-.css-btn, .git-btn{
+.css-btn, .javascript-btn{
     position: relative;
-    top: 70px;
+    top: 0px;
     width: 500px;
+}
+
+.git-btn{
+    position: relative;
+    bottom: 32px;
 }
 
 .html-btn, .javascript-btn{
     width: 500px;
+}
+
+#projetos-background{
+    height: 600px;
+}
+
+.projetos{
+    padding: 100px 0 0 0;
+}
+
+.content-projetos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projeto1, .projeto2, .projeto3, .projeto4{
+    color: #fff;
+    border-radius: 10px;
+    width: 150px; 
+    height: 250px;
+    margin: 60px 10px;
+    background-color: #333232;
+}
+
+.projeto-img{
+    width: 90%;
 }
 
 footer{
