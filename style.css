@@ -121,14 +121,20 @@ h1{
 
 .html-img{
     width: 50px;
+
+    animation: float 3s ease-in-out infinite;
 }
 
 .css-img{
     width: 50px;
+
+    animation: float 2s ease-in-out infinite;
 }
 
 .javascript-img{
     width: 50px;
+
+    animation: float 3s ease-in-out infinite;
 }
 
 .git-img{
@@ -136,6 +142,8 @@ h1{
     position: relative;
     top: 5px;
     left: 60px;
+
+    animation: float 2s ease-in-out infinite;
 }
 
 .github-img{
@@ -144,7 +152,8 @@ h1{
     right: 50px;
     width: 70px;
     position: relative;
-    top
+
+    animation: float 3s ease-in-out infinite;
 }
 
 .content-about{
@@ -157,6 +166,8 @@ h1{
     position: relative;
     top: 0px;
     width: 500px;
+
+    
 }
 
 .git-btn{
@@ -178,7 +189,18 @@ h1{
     position: relative;
     top: -100px;
     width: 600px;
+
+    animation: float 3s ease-in-out infinite;
     
+}
+
+@keyframes float{
+    0%, 100%{
+        transform: translateY(0)
+    }
+    50%{
+        transform: translateY(-20px)
+    }
 }
 
 .text-sobre{
@@ -224,22 +246,21 @@ h1{
 }
 
 #contato-background{
-    height: 300px;
-    background-color: #ffffff;
+    height: 250px;
+    background-color: #fff;
     opacity: 70%;
     color: #000000;
 }
 
 .contato{
     position: relative;
+    top: -70px;
+}
+
+.email{
+    position: relative;
     top: -50px;
 }
-
-.content-contato a{
-    text-decoration: none;
-    color: #000000;
-}
-
 
 .email a{
     text-decoration:none ;
@@ -251,16 +272,32 @@ h1{
     color: rgb(190, 21, 21);
 }
 
-.content-contato button{
-    color: #fff;
-    width: 150px;
-    border-radius: 25px;
-    box-shadow: 2px 2px 0 black;
-    background-color: rgb(241, 10, 10);
+.content-contato{
+    display: inline-block;
+}
+
+.button-57{
+    position: relative;
+    top: -50px;
+
+    width: 110px;
+    height: 50px;
+    color: #000000;
+
+    margin: 10px;
+    background: #a5a4a4;
+    text-align: center;
+    float: left;
+
+    /* flex para alinhar conteúdo*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .content-contato button:hover{
-    background-color: rgb(190, 21, 21);
+    background-color: #8b8a8a;
+    color: rgb(190, 21, 21);
 }
 
 footer{
@@ -292,4 +329,87 @@ footer a{
 
 .linkedin:hover, .github:hover{
     color: rgb(190, 21, 21);
+}
+
+
+
+
+
+
+
+
+
+.conhecimentos, .content-about, .sobre-title,
+.caixa-sobre, .projetos, .content-projetos, .contato, .content-contato, .email{
+    visibility: hidden;
+}
+
+
+/* Button Contato */
+.button-57 {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #18181a;
+  color: #18181a;
+  display: inline-block;
+  font-size: 15px;
+  line-height: 15px;
+  padding: 18px 18px 17px;
+  text-decoration: none;
+  cursor: pointer;
+  background: #fff;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-57 span:first-child {
+  position: relative;
+  transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 10;
+}
+
+.button-57 span:last-child {
+  color: white;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 100;
+  opacity: 0;
+  top: 65%;
+  left: 50%;
+  transform: translateY(225%) translateX(-50%);
+  height: 14px;
+  line-height: 13px;
+}
+
+.button-57:after {
+  content: "";
+  position: absolute;
+  bottom: -50%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  transform-origin: bottom center;
+  transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
+  transform: skewY(9.3deg) scaleY(0);
+  z-index: 50;
+}
+
+.button-57:hover:after {
+  transform-origin: bottom center;
+  transform: skewY(9.3deg) scaleY(2);
+}
+
+.button-57:hover span:last-child {
+  transform: translateX(-50%) translateY(-100%);
+  opacity: 1;
+  transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+}
+
+span{
+    position: relative;
+    top: -5px;
 }
