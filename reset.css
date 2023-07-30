@@ -21,3 +21,8 @@ h1, p, h3
 h3{
     font-size: 30px;
 }
+
+.conhecimentos, .content-about, .sobre-title,
+.caixa-sobre, .projetos, .content-projetos{
+    visibility: hidden;
+}

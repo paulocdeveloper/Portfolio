@@ -46,8 +46,6 @@ ul{
 
 } 
 
-
-
 .container{
     padding: 300px 0 0 0;
     
@@ -59,7 +57,6 @@ ul{
     }
 
 } 
-
 
 .textHello{
     font-size: 30px;
@@ -140,16 +137,40 @@ h1{
         text-align: center;
     }
 
-} 
+}
 
 .conhecimentos{
     padding: 50px 0 50px 0;
+}
+
+.content-about{
+    display: flex;
+    padding: 0 0 0 0;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(max-width:800px) {
+    .content-about {
+       flex-direction: column; 
+    }
+
+}
+
+.html-btn, .javascript-btn{
+    width: 500px;  
 }
 
 .html-img{
     width: 50px;
 
     animation: float 3s ease-in-out infinite;
+}
+
+.css-btn, .javascript-btn{
+    position: relative;
+    top: 0px;
+    width: 500px;
 }
 
 .css-img{
@@ -164,6 +185,11 @@ h1{
     margin: 50px 0 0 0;
 
     animation: float 3s ease-in-out infinite;
+}
+
+.git-btn{
+    position: relative;
+    bottom: 32px;
 }
 
 .git-img{
@@ -187,42 +213,6 @@ h1{
     animation: float 3s ease-in-out infinite;
 }
 
-.content-about{
-    display: flex;
-    padding: 0 0 0 0;
-    align-items: center;
-    justify-content: center;
-
-
-}
-
-@media(max-width:800px) {
-    .content-about {
-       flex-direction: column; 
-    }
-
-} 
-
-.css-btn, .javascript-btn{
-    position: relative;
-    top: 0px;
-    width: 500px;
-
-    
-}
-
- 
-
-.git-btn{
-    position: relative;
-    bottom: 32px;
-}
-
-.html-btn, .javascript-btn{
-    width: 500px;
-    
-}
-
 @media(max-width:800px) {
     h4, em {
         display: flex;
@@ -231,7 +221,6 @@ h1{
     }
 
 } 
-
 
 #sobre-background{
     position: relative;
@@ -256,7 +245,6 @@ h1{
     }
 
 } 
-
 
 @keyframes float{
     0%, 100%{
@@ -349,6 +337,10 @@ h1{
     top: 100px;
 }
 
+.content-contato{
+    display: inline-block;
+}
+
 .email{
     position: relative;
     top: 100px;
@@ -364,11 +356,7 @@ h1{
     color: rgb(190, 21, 21);
 }
 
-.content-contato{
-    display: inline-block;
-}
-
-.button-57{
+.buttonAction{
     position: relative;
     top: 110px;
 
@@ -381,7 +369,6 @@ h1{
     text-align: center;
     float: left;
 
-    /* flex para alinhar conteúdo*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -391,6 +378,74 @@ h1{
     background-color: #8b8a8a;
     color: rgb(190, 21, 21);
 }
+
+.buttonAction {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #18181a;
+    color: #18181a;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 15px;
+    padding: 18px 18px 17px;
+    text-decoration: none;
+    cursor: pointer;
+    background: #fff;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .buttonAction span:first-child {
+    position: relative;
+    transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+    z-index: 10;
+  }
+  
+  .buttonAction span:last-child {
+    color: white;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+    z-index: 100;
+    opacity: 0;
+    top: 65%;
+    left: 50%;
+    transform: translateY(225%) translateX(-50%);
+    height: 14px;
+    line-height: 13px;
+  }
+  
+  .buttonAction:after {
+    content: "";
+    position: absolute;
+    bottom: -50%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    transform-origin: bottom center;
+    transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
+    transform: skewY(9.3deg) scaleY(0);
+    z-index: 50;
+  }
+  
+  .buttonAction:hover:after {
+    transform-origin: bottom center;
+    transform: skewY(9.3deg) scaleY(2);
+  }
+  
+  .buttonAction:hover span:last-child {
+    transform: translateX(-50%) translateY(-100%);
+    opacity: 1;
+    transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+  }
+  
+  span{
+      position: relative;
+      top: -5px;
+  }
 
 footer{
     display: flex;
@@ -456,77 +511,7 @@ footer a{
 
 
 
-.conhecimentos, .content-about, .sobre-title,
-.caixa-sobre, .projetos, .content-projetos{
-    visibility: hidden;
-}
 
 
-/* Button Contato */
-.button-57 {
-  position: relative;
-  overflow: hidden;
-  border: 1px solid #18181a;
-  color: #18181a;
-  display: inline-block;
-  font-size: 15px;
-  line-height: 15px;
-  padding: 18px 18px 17px;
-  text-decoration: none;
-  cursor: pointer;
-  background: #fff;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
 
-.button-57 span:first-child {
-  position: relative;
-  transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
-  z-index: 10;
-}
 
-.button-57 span:last-child {
-  color: white;
-  display: block;
-  position: absolute;
-  bottom: 0;
-  transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
-  z-index: 100;
-  opacity: 0;
-  top: 65%;
-  left: 50%;
-  transform: translateY(225%) translateX(-50%);
-  height: 14px;
-  line-height: 13px;
-}
-
-.button-57:after {
-  content: "";
-  position: absolute;
-  bottom: -50%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  transform-origin: bottom center;
-  transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
-  transform: skewY(9.3deg) scaleY(0);
-  z-index: 50;
-}
-
-.button-57:hover:after {
-  transform-origin: bottom center;
-  transform: skewY(9.3deg) scaleY(2);
-}
-
-.button-57:hover span:last-child {
-  transform: translateX(-50%) translateY(-100%);
-  opacity: 1;
-  transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
-}
-
-span{
-    position: relative;
-    top: -5px;
-}
