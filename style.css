@@ -20,6 +20,10 @@ header{
 
 } 
 
+#btn-header {
+    margin: 0 10px 0 10px;
+}
+
 
 header nav a{
     text-decoration: none;
@@ -117,7 +121,7 @@ h1{
 #dowload{
     font-family: Fira Code, serif;
     
-    padding: 10px 20px;
+    padding: 20px 50px;
     text-align: center;
     box-shadow: 2px 2px 0 black;
     background-color: rgb(241, 10, 10);
@@ -128,8 +132,8 @@ h1{
 }
 
 #dowload:hover{
-    background-color: rgb(190, 21, 21);
-    color: #c7c2c2;
+    background-color: rgb(255, 255, 255);
+    color: #000000;
 }
 
 #about-background{
@@ -141,6 +145,8 @@ h1{
         background-color: #3bb78f;
         background-image: linear-gradient(315deg,
         rgb(197, 195, 195) 0%, rgb(138, 137, 137) 74%);
+
+        
 }
 
 #about-background:before {
@@ -151,9 +157,7 @@ h1{
     width: 100%;
     height: 350px;
     
-    background: url(https://media.geeksforgeeks.org/wp-content/uploads/20200326181026/wave3.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+    
 }
 
 
@@ -301,14 +305,25 @@ h1{
     }
 }
 
+.text-position {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .text-sobre{
-   
-    margin: 0 50px 0 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+    margin: 0;
 }
 
 #projetos-background{
     
-    padding: 100px 0 0 0;
+    padding:0;
     height: 100vh;
     background-color: #c7c2c2;
     background: linear-gradient(#c7c2c2, #fff);
@@ -322,13 +337,25 @@ h1{
 
 } 
 
-.projeto-img {
-    width: 500px;
-    float: right;
-    margin: 0 50px 0 50px;
+.projeto1 {
+    margin:100px 0 0 0;
+    clear: right;
+    height: 300px;
+    width: 100%;
+    max-width: 1300px;
+    text-align: center;
+    display: inline-block;
+
 }
 
-.projeto-btn {
+.projeto-img {
+    border-radius: 5px;
+    width: 500px;
+    float: right;
+    margin: 0;
+}
+
+.projeto-btn, .projeto-btn2 {
     position: relative;
     top: 70px;
 
@@ -340,19 +367,46 @@ h1{
     color: #000000;
     
 }
-
 .projeto-btn:hover {
     background-color: #18181a;
     color: #fff;
 }
 
-.text-projeto {
-    margin: 0 50px 0 50px;
+.projeto-btn2:hover {
+    background-color: #18181a;
+    color: #fff;
 }
 
-.projetos{
-    padding: 0 0 30px 0;
+.text-projeto {
+    margin: 0;
 }
+
+.projeto2 {
+    margin:100px 0 0 0;
+    clear: left;
+    height: 300px;
+    width: 100%;
+    max-width: 1300px;
+    text-align: center;
+    display: inline-block;
+}
+
+.projeto-img2 {
+    border-radius: 5px;
+    width: 500px;
+    float: left;
+    margin: 0;
+}
+
+
+
+
+
+.text-projeto2 {
+    margin: 0;
+    
+}
+
 
 .content-projetos{
     display: flex;
@@ -545,7 +599,7 @@ footer{
 	position:fixed;
 	width:60px;
 	height:60px;
-	bottom:40px;
+	bottom:70px;
 	right:40px;
 	background-color:#25d366;
 	color:#FFF;
