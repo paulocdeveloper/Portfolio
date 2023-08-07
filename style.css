@@ -171,7 +171,7 @@ h1{
 }
 
 .conhecimentos{
-    padding: 50px 0 50px 0;
+    padding: 100px 0 50px 0;
 }
 
 .content-about{
@@ -263,9 +263,17 @@ h1{
 }
 
 .design img {
-    width: 270px;
+    width: 100%;
+    max-width: 100px;
+    text-align: center;
    
     
+}
+
+.figma {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .sla {
@@ -281,7 +289,8 @@ h1{
 }
 
 .sobre-title {
-    margin: 250px 0 0 0;
+    
+    padding-top: 50px;
     
 }
 
@@ -336,6 +345,10 @@ h1{
     }
 
 } 
+
+.projetos {
+    padding-top: 50px;
+}
 
 .projeto1 {
     margin:100px 0 0 0;
@@ -427,7 +440,7 @@ h1{
 } 
 
 #contato-background{
-    height: 100vh;
+    height: 50vh;
     background-color: #fff;
     opacity: 70%;
     color: #000000;
@@ -442,18 +455,22 @@ h1{
 
 } 
 
-.contato{
-    position: relative;
-    top: 100px;
+.contato {
+    padding-top: 50px;
 }
 
 .content-contato{
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    height: 100px;
 }
 
-.email{
-    position: relative;
-    top: 100px;
+.email {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .email a{
@@ -467,8 +484,7 @@ h1{
 }
 
 .buttonAction{
-    position: relative;
-    top: 110px;
+    
 
     width: 110px;
     height: 50px;
