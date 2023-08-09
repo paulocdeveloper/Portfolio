@@ -15,7 +15,7 @@ header{
 
 @media(max-width:800px) {
     header {
-        position: unset;
+        visibility: hidden;
     }
 
 } 
@@ -164,7 +164,7 @@ h1{
 @media(max-width:800px) {
     #about-background {
         
-        height: 190vh;
+        height: 170vh;
         text-align: center;
     }
 
@@ -176,32 +176,41 @@ h1{
 
 .content-about{
     display: flex;
-    padding: 0 0 0 0;
     align-items: center;
     justify-content: center;
+    height: 300px;
 }
 
 @media(max-width:800px) {
     .content-about {
        flex-direction: column; 
+       height: 900px;
+       
     }
 
 }
 
-.html-btn, .javascript-btn{
-    width: 500px;  
+@media(max-width:800px) {
+    .html-btn, .css-btn, .javascript-btn
+    ,.git-btn {
+        max-width: 100%;
+    }
+
 }
+
+
 
 .html-img{
     width: 50px;
+    margin-top: 50px;
 
     animation: float 3s ease-in-out infinite;
 }
 
-.css-btn, .javascript-btn{
-    position: relative;
-    top: 0px;
+.html-btn, .css-btn, .javascript-btn, .git-btn {
     width: 500px;
+    height: 300px;
+    
 }
 
 .css-img{
@@ -213,33 +222,29 @@ h1{
 
 .javascript-img{
     width: 50px;
-    margin: 50px 0 0 0;
+    margin: 48px 0 0 0;
 
     animation: float 3s ease-in-out infinite;
 }
 
-.git-btn{
-    position: relative;
-    bottom: 32px;
-}
-
 .git-img{
-    width: 40px;
+    width: 45px;
     position: relative;
-    top: 5px;
-    left: 60px;
-    margin: 50px 0 0 0;
+    top: -6px;
+    left: 70px;
+    margin:0;
 
     animation: float 2s ease-in-out infinite;
 }
 
 .github-img{
     position: relative;
-    top: 19px;
-    right: 50px;
-    width: 70px;
+    top: 8px;
+    
+    right: 55px;
+    width: 75px;
     position: relative;
-    margin: 50px 0 0 0;
+    
 
     animation: float 3s ease-in-out infinite;
 }
@@ -270,6 +275,10 @@ h1{
     
 }
 
+.git-btn {
+    padding-top: 60px;
+}
+
 .figma {
     display: flex;
     align-items: center;
@@ -280,12 +289,22 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 300px;
 }
 
 #sobre-background{
     
     height: 100vh;
     background: linear-gradient(#fff, #c7c2c2);
+}
+
+@media(max-width:800px) {
+    #sobre-background {
+        height: 110vh;
+        
+        
+    }
+
 }
 
 .sobre-title {
@@ -321,6 +340,7 @@ h1{
     justify-content: center;
 }
 
+
 .text-sobre{
     width: 100%;
     display: flex;
@@ -328,6 +348,15 @@ h1{
     justify-content: center;
     max-width: 500px;
     margin: 0;
+}
+
+@media(max-width:800px) {
+    .text-sobre {
+        max-width: 90%;
+        
+        
+    }
+
 }
 
 #projetos-background{
@@ -340,7 +369,7 @@ h1{
 
 @media(max-width:800px) {
     #projetos-background {
-        height: 100vh;
+        height: 170vh;
         
     }
 
@@ -439,6 +468,52 @@ h1{
 
 } 
 
+@media(max-width:800px) {
+    .projeto-img, .projeto-img2 {
+        max-width: 300px;
+        text-align: center;
+        
+    }
+
+} 
+
+@media(max-width:800px) {
+    .projeto1, .projeto2 {
+        max-width: 300px;
+        text-align: center;
+        height: 600px;
+    }
+
+}
+
+@media(max-width:800px) {
+    .ecommerce {
+        clear: right;
+        
+        
+    }
+
+}
+
+@media(max-width:800px) {
+    .ecommerce2 {
+        clear: left;
+        
+        
+    }
+
+}
+
+@media(max-width:800px) {
+    .text-projeto {
+        max-width: 300px;
+        
+    }
+
+}
+
+
+
 #contato-background{
     height: 50vh;
     background-color: #fff;
@@ -450,7 +525,7 @@ h1{
     #contato-background {
 
         
-        height: 100vh;
+        height: 50vh;
     }
 
 } 
@@ -640,6 +715,13 @@ footer{
   font-size:30px;
 	box-shadow: 2px 2px 3px #999;
   z-index:100;
+}
+
+@media(max-width:800px) {
+    .float {
+        visibility: hidden;
+    }
+
 }
 
 .my-float{
