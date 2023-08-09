@@ -23,6 +23,8 @@ h3{
 }
 
 .conhecimentos, .content-about, .sobre-title,
-.caixa-sobre, .projetos, .content-projetos{
+.caixa-sobre, .content-projetos, 
+.content-about2, #paulo-img, .text-position, .projetos, .projeto1,
+.projeto2, .contato , .content-contato, .email, .whatsapp-contato{
     visibility: hidden;
 }

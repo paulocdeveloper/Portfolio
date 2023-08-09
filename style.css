@@ -276,7 +276,7 @@ h1{
     justify-content: center;
 }
 
-.sla {
+.content-about2 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -290,7 +290,7 @@ h1{
 
 .sobre-title {
     
-    padding-top: 50px;
+    padding-top: 100px;
     
 }
 
@@ -347,7 +347,7 @@ h1{
 } 
 
 .projetos {
-    padding-top: 50px;
+    padding-top: 100px;
 }
 
 .projeto1 {
@@ -571,6 +571,22 @@ h1{
   span{
       position: relative;
       top: -5px;
+  }
+
+  .whatsapp-contato {
+    display: inline-flex;
+    align-items: center;
+    
+  }
+
+  .whatsapp-number {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+  }
+
+  .whatsapp-number:hover {
+    color: rgb(190, 21, 21);
   }
 
 footer{
