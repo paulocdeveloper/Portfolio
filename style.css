@@ -279,10 +279,18 @@ h1{
     padding-top: 60px;
 }
 
+.git-txt {
+    margin-top: 15px;
+}
+
 .figma {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.figma-img {
+    animation: float 3s ease-in-out infinite;
 }
 
 .content-about2 {
