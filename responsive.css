@@ -1,3 +1,12 @@
+/* <tablet> */
+
+@media (min-width:800px) and (max-width:875px) {
+    .background {
+        background-size: 100vh;
+    }
+}
+/* </tablet> */
+
 /* <mobile> */
 
 @media(max-width:800px) {
@@ -102,3 +111,45 @@
 }
 
 /* </mobile> */
+
+
+/* <telas-menores> */
+@media (max-width:400px) {
+    header {
+        width: 0;
+    }
+    
+    .textHello {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    .conhecimentos, .sobre-title, .projetos, .contato {
+        font-size: 30px;
+    }
+
+    #about-background {
+        height: 200vh;
+    }
+
+    #projetos-background {
+        height: 190vh;
+    }
+
+    .buttonAction {
+        margin: 10px;
+        width: 80px;
+        
+    }
+
+   
+}
+
+/* </telas-menores> */
